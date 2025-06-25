@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="compiled/emulator.js" type="module"></script>
+  <script type="module">
+    import { Chip8Emulator } from './compiled/emulator.js';
+    const display = document.querySelector('#display');
+    const chip8 = Chip8Emulator.create(display.getContext('2d'));
+  </script>
+</head>
+<body>
+  <canvas id="display"></canvas>
+</body>
+</html>
